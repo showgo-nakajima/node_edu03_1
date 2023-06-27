@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Edit</title>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>利用者情報</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>名前</th>
+        <th>疾患名</th>
+        <th>現病歴</th>
+      </tr>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.condition %></td>
+        <td><%= user.medicalHistory %></td>
+      </tr>
+    </table>
+  
+    <h2>詳細情報</h2>
+    <p><strong>疾患名:</strong><%= user.condition %></p>
+    <p><strong>現病歴:</strong><%= user.medicalHistory %></p>
+    <p><strong>目標設定:</strong><%= user.goal %></p>
+    <p><strong>家族構成:</strong><%= user.family %></p>
+    <p><strong>既往歴:</strong><%= user.medicalHistoryDetail %></p>
+  </body>
+  </html>

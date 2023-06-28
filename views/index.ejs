@@ -28,7 +28,7 @@
         <% users.forEach(function (value) { %>
           <tr>
             <td>
-              <a href="/user/<%= value.id %>"><%= value.name %></a>
+              <a href="/users/<%= value.id %>"><%= value.name %></a>
             </td>
             <td>
               <%= value.birthdate %>
@@ -65,7 +65,6 @@
   <p><a href="/create">ユーザーの追加</a></p>
 
   <script>
-    
   </script>
 </body>
 
